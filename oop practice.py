@@ -43,10 +43,15 @@ c1.config()
 c2.config()
 
 
+# #init method is a constructor that is called when an object is created from the class 
+# # and it allows the class to initialize the attributes of the class.
+## simple wording main init constructor hai jo object create krte hi call hota hai aur attributes ko initialize krta hai
+
 
 ###create a class named car with 2 attributes and 1 method to display the attributes
 class car :
     wheels = 4  #class attribute
+    
     def __init__(self, make, model): #instance attributes
         self.make = make
         self.model = model
@@ -57,7 +62,4 @@ class car :
 c1 = car("Toyota", "Camry")
 c1.display()
 
-##init method is a constructor that is called when an object is created from the class 
-## and it allows the class to initialize the attributes of the class.
-#simple wording main init constructor hai jo object create krte hi call hota hai aur attributes ko initialize krta hai
 

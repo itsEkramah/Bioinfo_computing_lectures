@@ -87,15 +87,15 @@
 
 
 # recursive function khud ko call krta
-def recursive_fun(k):
-    if(k>0):
-        result = k + recursive_fun(k-1)# if just added k it will staart infinite call  so we use k-1
-        print(result)
-    else:
-        result = 0
-    return result
+# def recursive_fun(k):
+#     if(k>0):
+#         result = k + recursive_fun(k-1)# if just added k it will staart infinite call  so we use k-1
+#         print(result)
+#     else:
+#         result = 0
+#     return result
 
-recursive_fun(4)
+# recursive_fun(4)
 
 
 # Dry run for k=4:
@@ -115,7 +115,19 @@ recursive_fun(4)
 # returns 6, so result = 4 + 6 = 10, print(10)
 #joo sub se pehle call ho ga wo last main print ho ga  q k uski execustion ki values depend on output of next call
 
+# next class task --> practice functions and loops combine examples and different logics
+# factorial code by using functions and by using loop both ways   try multiple different approaches
+# factorial using recursive function
 
+def calculate_factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * calculate_factorial(n - 1)
 
-# next class task --> practice funtions and loops combine examples and different logics 
-# #factorial code by using functions and by using loop both ways   try multiple different approaches 
+n = int(input("Enter a number to calculate its factorial: "))
+
+result = calculate_factorial(n)
+print(f"The factorial of {n} is {result}")
+
+#example of function and loop 
