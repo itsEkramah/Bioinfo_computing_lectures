@@ -3,6 +3,7 @@
 
 class computer :
 
+
 ##this is a method(function inside class)   
 
     def config(self): #self is used to refer to the current object
