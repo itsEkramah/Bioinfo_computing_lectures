@@ -364,9 +364,50 @@
 # count_dna("ATGCAAGCGT", "A")
 
 
-def count_dna(dnaseq , base ):
-    count=dnaseq.count(base)
-    print("DNA: " , count )
-    return count
-count_dna("ATCGCGCGCGCATA" , "A")
+# def count_dna(dnaseq , base ):
+#     count=dnaseq.count(base)
+#     print("DNA: " , count )
+#     return count
+# count_dna("ATCGCGCGCGCATA" , "A")
 
+
+
+
+# Expected Output: 1 4 9 16 25
+# # 🔹 Write function squares_up_to(n) → prints all squares from 1^2 to n^2
+# def squares_up_to(n):
+#     for i in range (1 , n+1):
+#         print(i**2 , end=" ")
+# squares_up_to(5)
+
+# Expected Output: Sum = 15
+# # 🔹 Define sum_to_n(n) → use loop to sum 1 to n, then return total
+
+# def sum_to_n (n):
+#     total_sum=0
+#     for i in range (1 , n+1):
+#         total_sum += i
+#     print("Sum:" ,total_sum )
+# sum_to_n(5)
+
+
+# Expected Output:8
+# 🔹 Define a function power(base, exp) that returns base ** exp
+# 🔹 Call with 2, 3
+
+# def power(base , exponent):
+#     return base ** exponent 
+# print(power(2 , 3))
+
+Expected Output: Factorial = 120
+# 🔹 Define recursive function factorial(n) that returns factorial of n
+# 🔹 Print result for n=5
+
+
+def factorial (n):
+    if n == 0 or n ==1 :
+        return 1
+    else:
+        return n * factorial
+result = factorial(5)
+print(f"factorial of {n} is: {result }")
