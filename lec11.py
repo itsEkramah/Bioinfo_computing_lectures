@@ -169,11 +169,41 @@
 
 
 
-# #20
-n=7
-a,b=0,1
-for _ in range(n):
-    print(a,end=" ")
-    a,b=b,a+b
+# # #20
+# n=7
+# a,b=0,1
+# for _ in range(n):
+#     print(a,end=" ")
+#     a,b=b,a+b
 
 
+
+# # 21
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return n * factorial(n - 1)
+
+# print(factorial(5))
+
+# # 22
+# text = "python"
+# rev = text[::-1]
+# print(rev)
+
+# # 23
+# word = "madam"
+# if word == word[::-1]:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+# 24
+num = 1234
+total = 0
+while num > 0:
+    digit = num % 10
+    total += digit
+    num = num // 10
+print(total)
