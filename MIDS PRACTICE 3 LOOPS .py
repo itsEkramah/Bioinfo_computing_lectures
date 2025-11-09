@@ -421,11 +421,85 @@
 #         print ("*" , end=" ")
 #     print()
 
-# Expected Output: Even number found: 4
-num = [1 , 2, 3 , 4, 5]
-for i in num:
-    if i % 2 == 0:
-                break
-print("first even no found:", i)
+# # Expected Output: Even number found: 4# 🔹 Use for loop and if to find first even number then break 
+# num = [1 , 7, 3 , 4, 5 , 6 ]
+# for i in num:
+#     if i % 2 == 0:
+#                 break
+# print("first even no found:", i)
     
 
+# # Expected Output: 0 1 1 2 3 5 8       first 7 no of fibbionachi series
+# a=0
+# b=1
+# num=5
+# print(a , b , end=" ")
+
+# for _ in range( num ):
+#     next_term = a+b
+#     print(next_term , end = " ")
+#     a , b = b , next_term 
+
+# Expected Output: Factorial: 120
+# num = 5 
+# factorial = 1
+# for i in range(1 , num +1):
+#     factorial *= i
+# print(f"factorial: , {factorial}")
+
+
+
+# SECTION 4 — SCENARIO-BASED CODING (3 Questions)
+
+# Write a Python program to calculate the GC content of a given DNA string using a for loop.
+# Output → percentage GC.
+
+# dna="ATCGGGGGCCCCTATAACCACACGCACCTCTGAGACG"
+# G_count=0
+# for i in dna :
+#     if i == "G":
+#         G_count += 1
+# print("G_count :" ,G_count)
+
+# C_count=0
+# for j in dna :
+#     if j == 'C':
+#         C_count += 1
+# print("C_count :" ,C_count)
+
+# Perecentage_GC= G_count + C_count / len(dna) *100
+# print (f"GC PERCENTAGE IN DNA STRING IS :{Perecentage_GC}")
+
+
+# Scenario:
+# Write a program that asks a user for a number and prints whether it is prime or not using a loop.
+
+
+# num= int(input("enter number:"))
+# if num<2:
+#     print("not prime no")
+# else:
+# is_prime = True
+# for i in range(2, int(num ** 0.5) + 1): ###num ** 0.5 use to take sqroot of num and then add 1 
+#     if num % i == 0:  ##check if its divvisible by i 
+#         is_prime = False
+#         break
+# if is_prime:
+#     print(f"{num} is a prime number")
+# else:
+#     print(f"{num} is not a prime number")
+
+
+
+# Write a program using nested loops to print:
+# 1
+# 12
+# 123
+# 1234
+# 12345
+
+# num=5
+# for i in range (1 , 6 ):
+#     for j in range ( 1 , i +1):
+#         print(j , end=" ")
+#     print()
