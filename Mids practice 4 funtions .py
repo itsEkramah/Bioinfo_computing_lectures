@@ -399,15 +399,56 @@
 #     return base ** exponent 
 # print(power(2 , 3))
 
-Expected Output: Factorial = 120
+# Expected Output: Factorial = 120
 # 🔹 Define recursive function factorial(n) that returns factorial of n
 # 🔹 Print result for n=5
 
 
-def factorial (n):
-    if n == 0 or n ==1 :
-        return 1
-    else:
-        return n * factorial
-result = factorial(5)
-print(f"factorial of {n} is: {result }")
+# def factorial(n) :
+#     if n == 0 or n == 1 :
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+# result = factorial(5)
+# print(f"factorial is {result}")
+
+# num=int(input(" enter number"))
+# factorial=1
+# for i in range ( 1 ,  num +1 ):
+#     factorial *= i
+# print(f"factorial of {num} is : {factorial}" )
+
+
+# Expected Output:  Reverse: ATGC 
+# 🔹 Define function reverse_dna(seq) → returns reverse of DNA string
+# 🔹 Print result for "CGTA"
+
+# def reverse_dna(dna_seq ):
+#     return dna_seq[: : -1]
+# result = reverse_dna("CGTA")
+# print(f"reverse dna string is:{result}")
+
+
+# #same thing by using loop 
+# dna_string= "ATGC"
+# for i in range(len(dna_string) -1 , -1 , -1 ):
+#     print(dna_string[i] , end=" " )
+
+
+
+
+
+
+
+# SECTION 4 — SCENARIO-BASED (3 Questions)
+
+# Write a function gc_content(dna) that calculates and returns GC% of a DNA sequence.
+# Then call it for "ATGCGCGA".
+
+
+def gc_content(dna) :
+    gc_count=0
+    for i in dna:
+        if i in ["G" , "C"]:
+            gc_count += 1
+gc_percentage= gc
