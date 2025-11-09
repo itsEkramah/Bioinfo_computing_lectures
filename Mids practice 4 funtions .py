@@ -443,12 +443,44 @@
 # SECTION 4 — SCENARIO-BASED (3 Questions)
 
 # Write a function gc_content(dna) that calculates and returns GC% of a DNA sequence.
-# Then call it for "ATGCGCGA".
+# Then call it for "ATCGCGCGCGCGCGCTGCTCTCTACAACAACCATGACTAGCG".
 
 
-def gc_content(dna) :
-    gc_count=0
-    for i in dna:
-        if i in ["G" , "C"]:
-            gc_count += 1
-gc_percentage= gc
+# def gc_content(dna):
+#     gc_count = 0
+#     for i in dna:
+#         if i in ["G", "C"]:
+#             gc_count += 1
+#     gc_percentage = gc_count / len(dna) * 100
+#     print(f"gcpercentage is : {gc_percentage}")
+
+# gc_content("ATCGCGCGCGCGCGCTGCTCTCTACAACAACCATGACTAGCG")
+
+
+
+
+# Scenario:
+# Write a function is_palindrome(word) that checks if a string reads the same forward and backward.
+# Test with "madam" and "hello".
+# def is_palindrome(word):
+#     return word == word[::-1]
+# print(is_palindrome("madam")) 
+# print(is_palindrome("hello"))  
+# print(is_paalndrome("ATCCTA"))
+
+
+
+# Write a recursive function 
+# sum_list(nums) that sums all elements of a list 
+# without using sum().
+
+# Input: [2, 4, 6]
+# Output: 12
+
+
+def sum_list(list1):
+    if len(list1) ==0:
+        return 0
+    else :
+        return list1[0] + sum_list(list1[1:])
+print(sum_list([2, 4, 6]))    
